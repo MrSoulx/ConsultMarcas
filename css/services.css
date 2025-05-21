@@ -1,0 +1,236 @@
+
+/* Services Section */
+.services {
+    padding: 100px 0; /* Ajuste de padding */
+    background: #f0f4f8; /* Color de fondo más claro */
+    position: relative;
+    overflow: hidden;
+}
+
+.owl-carousel .service-card {
+    background: #ffffff; /* Fondo blanco para las tarjetas */
+    padding: 30px; /* Aumentar padding para más espacio */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    text-align: center; 
+    min-height: 300px; /* Altura uniforme para todas las tarjetas */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+.owl-carousel .service-card:hover { 
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+}
+.services-section { 
+    max-width: 1200px; /* Ancho máximo aumentado */
+    margin: 0 auto; /* Centrar sección */
+    padding: 0 15px; /* Espaciado lateral */
+}
+
+.services .section-title {
+    color: #2c3e50; /* Color oscuro para el título */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+}
+/* Hero Section - Servicios */
+.services-hero {
+    background-color: #e1e1e1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.services-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.998);
+    z-index: 1;
+}
+
+.services-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.services-hero-content h1 {
+    color: #ff470f;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+}
+
+.services-hero-content p {
+    color: #000000;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fuerza 4 columnas iguales */
+    gap: 20px; /* Menor espacio entre tarjetas */
+    max-width: 1400px; /* Ancho máximo aumentado para que quepan 4 tarjetas */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px 15px; /* Reducido padding para tarjetas más delgadas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.1); /* Borde sutil */
+    min-height: 280px; /* altura uniforme para todas las tarjetas */
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #e67e22, #c0392b); /* De naranja a rojo */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Sombra más intensa al hacer hover */
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Icono de servicio */
+.service-icon {
+    font-size: 50px; /* Tamaño del icono aumentado */
+    color: #ffffff; /* Color blanco para el icono */
+    margin-bottom: 15px;
+    border-radius: 50%; /* Bordes redondeados */
+    width: 70px; /* Tamaño del contenedor del icono */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff4d29; /* Color de fondo del icono */
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.service-icon i {
+    font-size: 26px; /* Tamaño del icono ligeramente reducido */
+    color: white; /* Color blanco para el icono */
+}
+
+.service-card h3 {
+    font-size: 1.5rem; /* Tamaño de fuente del título aumentado */
+    color: #2c3e50; /* Color oscuro para el título */
+    margin-bottom: 15px; /* Margen inferior aumentado */
+    font-weight: 600;
+}
+.service-card p {
+    color: #555; /* Color de texto más oscuro */
+    font-size: 1rem; /* Tamaño de fuente aumentado */
+    line-height: 1.6; /* Interlineado */
+    margin-bottom: 15px; /* Margen inferior */
+}
+.number {
+    font-size: 1.8rem; /* Tamaño del número algo reducido */
+    color: #e67e22; /* Color naranja para el número */
+    font-weight: bold; /* Negrita */
+    position: absolute; /* Posición absoluta para el número */
+    top: 15px; /* Ajuste de posición */
+    left: 15px; /* Ajuste de posición */
+}
+
+/* Botón "Conoce más" */
+.read-more-btn {
+    margin-top: 15px; 
+    padding: 12px 20px; 
+    background: #ff4d29; 
+    border: none; 
+    border-radius: 25px; 
+    color: #ffffff; 
+    cursor: pointer; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; 
+}
+.read-more-btn:hover { 
+    background: #e2431c; /* Color más oscuro al pasar el mouse */
+}
+
+
+@media (max-width: 1024px) {
+    .owl-carousel .service-card {
+        min-height: auto; /* Ajustar altura en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 100px 0 60px; /* Ajuste de padding en móviles */
+    }
+    .owl-carousel .service-card {
+        padding: 20px 15px; /* Menos padding en móviles */
+        min-height: auto; /* Ajustar altura en móviles */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+        gap: 20px; /* Espacio entre tarjetas */
+        max-width: 400px;
+    }
+
+    .service-card {
+        padding: 20px 15px; /* Menos padding en móviles */
+        min-height: auto;
+    }
+
+    .service-icon {
+        width: 50px; /* Tamaño reducido en móviles */
+        height: 50px;
+    }
+
+    .service-icon i {
+        font-size: 22px; /* Tamaño de icono más pequeño en móviles */
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño en móviles */
+    }
+}
+

@@ -1,0 +1,23 @@
+/* Responsive */
+@media (max-width: 768px) {
+    .services {
+        padding: 40px 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .service-card {
+        padding: 20px 15px;
+    }
+
+    .service-icon {
+        font-size: 1.8rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+}
